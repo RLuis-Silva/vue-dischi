@@ -5,6 +5,25 @@
 }
 
 body{
-    background-color: green;
+    background-color: #192d3c;
+    color: white;
     font-family: 'Nerko One', cursive;
+}
+
+
+/* UTILITIES */
+
+
+img{
+    max-width: 100%;
+}
+
+/* layout */
+#app header {
+    padding: 10px;
+    background-color: #2b3a47;
+}
+
+#app header img {
+    max-width: 35px;
 }
