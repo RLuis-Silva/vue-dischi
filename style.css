@@ -27,3 +27,20 @@ img{
 #app header img {
     max-width: 35px;
 }
+
+/* lista cd */
+.lista-cd{
+    display: flex; /* gli elementi figli flettono */
+    flex-wrap: wrap; /* distribuzione automatica degli elementi (a capo) */
+    justify-content: center;
+    padding: 50px 10px;
+    list-style: none;
+}
+
+.cd{
+    flex-basis: 200px;
+    background-color: #2b3a47;;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
