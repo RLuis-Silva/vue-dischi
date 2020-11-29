@@ -44,3 +44,29 @@ img{
     padding: 10px;
     text-align: center;
 }
+
+.cd .title{
+    text-transform: uppercase;
+}
+
+.cd .autore,
+.cd .anno{
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+.cd .autore{
+    font-size: 20px;
+}
+
+/* filtro */
+
+.filtro-genere{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.filtro-genere select{
+    margin-left: 20px;
+}

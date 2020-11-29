@@ -20,6 +20,17 @@
         </header>
         
         <div class="container">
+            <div class="filtro-genere">
+                Filter by genre
+                <select v-model="genereAttuale" @change="filtroGenere">
+                    <option value="all">All</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="metal">Metal</option>
+                    <option value="jazz">Jazz</option>
+                </select>
+            </div>
+
             <ul class="lista-cd" v-if="arrayCD.length > 0"> <!-- se condizione true stampa lista cd in v-for -->
                 <li class="cd" v-for="cd in arrayCD">
                     <div class="wrap-image">

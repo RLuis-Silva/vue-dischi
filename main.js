@@ -19,7 +19,8 @@
 const app = new Vue({
     el: "#app",
     data: {
-        arrayCD: []
+        arrayCD: [],
+        genereAttuale: "all"
     },
     created(){
         // prende gli album
@@ -37,5 +38,22 @@ const app = new Vue({
                 // oppure .catch(function(errore){})
                 console.log(error);
             });
+    },
+    methods:{
+        filtroGenere(){
+            axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+                .then(result =>{
+                    // caso di successo
+                    let cdsList = result.data.response;
+                    if(this.genereAttuale !== "all"){
+
+                    }
+                    this.arrayCD = cdsList;
+                })
+                .catch(errore =>{
+                    //caso di errore
+                    console.log(errore);
+                });
+        }
     }
 });
