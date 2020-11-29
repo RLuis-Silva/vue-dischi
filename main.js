@@ -46,7 +46,7 @@ const app = new Vue({
                     // caso di successo
                     let cdsList = result.data.response;
                     if(this.genereAttuale !== "all"){
-
+                        cdsList = cdsList.filter(cd =>cd.genre.toLowerCase() === this.genereAttuale);
                     }
                     this.arrayCD = cdsList;
                 })
